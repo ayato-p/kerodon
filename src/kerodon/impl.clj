@@ -144,6 +144,7 @@
                   (not= port (scheme {:https 443 :http 80})))
          (str ":" port))
        uri
+       "?"
        query-string))
 
 (defn get-value [state selector]
